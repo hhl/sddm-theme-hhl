@@ -112,13 +112,13 @@ In kf5/plasma you can use the sddm-kcm module ( kde-config-sddm) to choose via s
 #### How it looks like?
 
 ##### openspace
-![alt openspace-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/sddm-themes-hhl/openspace/images/preview.jpg "sddm-theme-openspace preview")
+![alt openspace-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/openspace/images/preview.jpg "sddm-theme-openspace preview")
 
 ##### mammoth
-![alt mammoth-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/sddm-themes-hhl/mammoth/images/preview.jpg "sddm-theme-mammoth preview")
+![alt mammoth-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/mammoth/images/preview.jpg "sddm-theme-mammoth preview")
 
 ##### poetry
-![alt poetry-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/sddm-themes-hhl/poetry/images/preview.jpg "sddm-theme-poetry preview")
+![alt poetry-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/poetry/images/preview.jpg "sddm-theme-poetry preview")
 
 ---
 
