@@ -1,4 +1,4 @@
-Hi, here you will find my thoughts about sddm.
+Hi, here you will find my thoughts about [sddm](https://github.com/sddm/sddm "sddm").
 
 _This is my playground, be aware of this!_
 
