@@ -72,6 +72,9 @@ Or if you use [siduction](https://siduction.org "siduction homepage"), search fo
 For debian sid/unstable you are able to find them in the [siduction repositories](http://packages.siduction.org/ "packages.siduction.org/"), [amd64](http://packages.siduction.org/?Repositories:extra_amd64 "amd64") and [i386](http://packages.siduction.org/?Repositories:extra_i386 "i386").  
 I told you, it is nearly the same, no fancy stuff and so on._
 
+- __lxqt__ it is based on poetry with some changes
+  - i made it for to use with my LXQT installation and i wanna share it, have fun with it!
+
 ---
 
 #### What is needed:
@@ -119,6 +122,9 @@ In kf5/plasma you can use the sddm-kcm module ( kde-config-sddm) to choose via s
 
 ##### poetry
 ![alt poetry-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/poetry/images/preview.jpg "sddm-theme-poetry preview")
+
+#### lxqt
+![alt lxqt-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/lxqt/images/preview.jpg "sddm-theme-lxqt preview")
 
 ---
 
