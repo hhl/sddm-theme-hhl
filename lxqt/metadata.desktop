@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=poetry
+Description=poetry sddm theme.
+Type=sddm-theme
+Author=Hendrik Lehmbruch
+Copyright=2015-2016, Hendrik Lehmbruch
+License=EXPAT
+Screenshot=images/preview.jpg
+Version=0.1
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=poetry
+Theme-API=2.0
+Website=https://github.com/hhl/hhl/tree/master/sddm-themes-hhl
