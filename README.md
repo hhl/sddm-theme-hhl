@@ -125,8 +125,8 @@ In kf5/plasma you can use the sddm-kcm module ( kde-config-sddm) to choose via s
 ##### poetry
 ![alt poetry-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/poetry/images/preview.jpg "sddm-theme-poetry preview")
 
-#### lxqt
-![alt lxqt-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/lxqt/images/preview.jpg "sddm-theme-lxqt preview")
+#### humming
+![alt humming-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/humming/images/preview.jpg "sddm-theme-humming preview")
 
 ---
 
