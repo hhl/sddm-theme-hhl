@@ -72,8 +72,10 @@ Or if you use [siduction](https://siduction.org "siduction homepage"), search fo
 For debian sid/unstable you are able to find them in the [siduction repositories](http://packages.siduction.org/ "packages.siduction.org/"), [amd64](http://packages.siduction.org/?Repositories:extra_amd64 "amd64") and [i386](http://packages.siduction.org/?Repositories:extra_i386 "i386").  
 I told you, it is nearly the same, no fancy stuff and so on._
 
-- __lxqt__ it is based on poetry with some changes
+- __humming__ it is based on poetry with some changes
   - i made it for to use with my LXQT installation and i wanna share it, have fun with it!
+  - the hummingbird picture/ logo is taken from https://github.com/Caig/LXQt-graphics and carefully modified.
+    - (todo, sorry i have to push the picture source from another location. This will be done as soon as possible.)
 
 ---
 
@@ -81,7 +83,7 @@ I told you, it is nearly the same, no fancy stuff and so on._
 
 - [sddm](https://github.com/sddm/sddm "sddm")
 - QtQuick 2.0 (normaly it should be automagicly installed together with sddm)
-- QtGraphicalEffects 1.0 (qml-module-qtgraphicaleffects)
+- QtGraphicalEffects 1.4 (qml-module-qtgraphicaleffects)
 
 ---
 

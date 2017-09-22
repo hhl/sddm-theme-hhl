@@ -27,7 +27,7 @@
 import QtQuick 2.0
 import QtGraphicalEffects 1.0
 import SddmComponents 2.0
-import "./components"
+import "./components" as Components
 
 Rectangle {
     width: 640
@@ -119,7 +119,7 @@ Rectangle {
         color: "#00000000"
 
         /* Messages and warnings */             
-        CapsLock {
+        Components.CapsLock {
             id: txtCaps
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
@@ -192,7 +192,7 @@ Rectangle {
                     anchors.right: parent.right
                     spacing: 12
 
-                    UserBox {
+                    Components.UserBox {
                         id: user_entry
 
                         /* I THINK THERE IS NO NEED FOR THAT HACK ANY MORE, BUT I LEAVE IT AS IT IS */
@@ -235,7 +235,7 @@ Rectangle {
                         KeyNavigation.backtab: user_entry; KeyNavigation.tab: pw_entry
                     }
 
-                    PwBox {
+                    Components.PwBox {
                         id: pw_entry
 
                         /* start hack */
@@ -339,7 +339,7 @@ Rectangle {
                  * also the KeyNavigation of the next button is a
                  * thought worth than, ... okay?
                  * ************************************************/
-                SessionMenu {                    
+                Components.SessionMenu {                    
                     id: menu_session
                     width: 200; height: 0
                     model: sessionModel
@@ -351,39 +351,39 @@ Rectangle {
     /* end Main block */
 
     /* tooltips buttonRow */
-    ToolTip {
+    Components.ToolTip {
         id: tooltip3
         target: session_button
         text: textConstants.session
     }
 
-    ToolTip {
+    Components.ToolTip {
         id: tooltip4
         target: system_button
         text: textConstants.shutdown
     }
 
-    ToolTip {
+    Components.ToolTip {
         id: tooltip5
         target: reboot_button
         text: textConstants.reboot
     }
 
      /** there is no translation in sddm for it **/
-     ToolTip {
+     Components.ToolTip {
          id: tooltip6
          target: suspend_button
          text: "Suspend" // textConstants.suspend
      }
  
      /** there is no translation in sddm for it **/        
-     ToolTip {
+     Components.ToolTip {
          id: tooltip7
          target: hibernate_button
          text: "Hibernate" //textConstants.hibernate
      }
 
-    ToolTip {
+    Components.ToolTip {
         id: tooltip2
         target: login_button
         text: textConstants.login

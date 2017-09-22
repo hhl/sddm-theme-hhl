@@ -1,6 +1,6 @@
 [SddmGreeterTheme]
-Name=lxqt
-Description=lxqt sddm theme.
+Name=humming
+Description=humming sddm theme made foe LXQT.
 Type=sddm-theme
 Author=Hendrik Lehmbruch
 Copyright=2015-2017, Hendrik Lehmbruch
@@ -12,4 +12,4 @@ ConfigFile=theme.conf
 TranslationsDirectory=translations
 Theme-Id=lxqt
 Theme-API=2.0
-Website=https://github.com/hhl/hhl/tree/master/sddm-themes-hhl
+Website=https://github.com/hhl/hhl/tree/master/sddm-theme-hhl
