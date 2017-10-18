@@ -74,9 +74,7 @@ I told you, it is nearly the same, no fancy stuff and so on._
 
 - __humming__ it is based on poetry with some changes
   - i made it for to use with my LXQT installation and i wanna share it, have fun with it!
-  - the hummingbird picture/ logo is taken from https://github.com/Caig/LXQt-graphics and carefully modified.
-    - (todo, sorry i have to push the picture source from another location. This will be done as soon as possible.)
-
+  - the hummingbird picture/ logo is taken from https://github.com/Caig/LXQt-graphics and carefully modified
 ---
 
 #### What is needed:
