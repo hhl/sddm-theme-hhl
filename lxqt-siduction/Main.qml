@@ -91,6 +91,18 @@ Rectangle {
          opacity: 0.25 
     }   
     /* end topBar */
+    
+    /* footerPic */    
+    Image {
+        id: footerPic
+        anchors.bottom: parent.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: parent.width
+        height:geometry.height
+        source: "images/footer.png"
+        fillMode: Image.PreserveAspectFit 
+    }
+    /* end footerPic */ 
 
     /* background Main block */    
     /************************************************** 

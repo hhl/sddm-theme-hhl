@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=lxqt-siduction
+Description=sddm theme made for the siduction LXQT release.
+Type=sddm-theme
+Author=Hendrik Lehmbruch
+Copyright=2015-2017, Hendrik Lehmbruch
+License=EXPAT
+Screenshot=images/preview.jpg
+Version=0.1
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=lxqt-siduction
+Theme-API=2.0
+Website=https://github.com/hhl/hhl/tree/master/sddm-theme-hhl
