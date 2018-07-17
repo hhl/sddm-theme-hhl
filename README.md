@@ -126,6 +126,9 @@ In kf5/plasma you can use the sddm-kcm module ( kde-config-sddm) to choose via s
 #### humming
 ![alt humming-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/humming/images/preview.jpg "sddm-theme-humming preview")
 
+#### icebear meets penguin
+![alt icebear-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/icebear/images/preview.jpg "sddm-theme-icebear preview")
+
 ---
 
 ##### Last but not least
