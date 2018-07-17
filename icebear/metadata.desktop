@@ -1,0 +1,14 @@
+[SddmGreeterTheme]
+Name=icebear
+Description=sddm theme icebear release.
+Type=sddm-theme
+Author=Hendrik Lehmbruch
+Copyright=2015-2018, Hendrik Lehmbruch
+License=EXPAT
+Screenshot=images/preview.jpg
+Version=0.1
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=
+Theme-API=2.0
