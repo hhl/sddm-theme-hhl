@@ -333,10 +333,11 @@ Rectangle {
                  * also the KeyNavigation of the next button is a
                  * thought worth than, ... okay?
                  * ************************************************/
+                
                 Components.SessionMenu {                    
                     id: menu_session
                     width: 145
-		    height: 0
+                    height: 0
                     model: sessionModel
                     index: sessionModel.lastIndex                    
                 }
@@ -350,16 +351,16 @@ Rectangle {
      /** there is no translation in sddm for it, but soon **/
     Components.ToolTip {
     	id: tooltip0
-	target: user_entry
-	text: Enter your username
-	//text: textConstants.promptUser
+        target: user_entry
+        text: Enter your username
+        //text: textConstants.promptUser
      }
 
     Components.ToolTip {
     	id: toolTip1
-	target: pw_entry
-	text: Enter your password
-	//text: textConstants.promptPassword
+        target: pw_entry
+        text: Enter your password
+        //text: textConstants.promptPassword
     }
     /* end tooltips user and pw row */
 
@@ -387,7 +388,7 @@ Rectangle {
          id: tooltip6
          target: suspend_button
          text: "Suspend" 
-	 //text: textConstants.suspend
+         //text: textConstants.suspend
     }
  
       /** there is no translation in sddm for it, but soon **/        
@@ -395,7 +396,7 @@ Rectangle {
          id: tooltip7
          target: hibernate_button
          text: "Hibernate" 
-	 //text: textConstants.hibernate
+         //text: textConstants.hibernate
     }
 
     Components.ToolTip {
