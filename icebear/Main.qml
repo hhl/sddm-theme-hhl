@@ -352,14 +352,14 @@ Rectangle {
     Components.ToolTip {
     	id: tooltip0
         target: user_entry
-        text: Enter your username
+        text: "Enter your username"
         //text: textConstants.promptUser
      }
 
     Components.ToolTip {
     	id: toolTip1
         target: pw_entry
-        text: Enter your password
+        text: "Enter your password"
         //text: textConstants.promptPassword
     }
     /* end tooltips user and pw row */
