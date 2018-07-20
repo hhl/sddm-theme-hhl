@@ -140,12 +140,6 @@ Rectangle {
             anchors.top: parent.top
             anchors.topMargin: 55
 
-            /* workaround to focus the user_entry, see below the TextBox user_entry */
-            property alias user: user_entry.text
-
-            /* workaround to focus pw_entry if needed */
-            property alias password: pw_entry.text
-
             Column {
                 height: 71
                 spacing: 7
@@ -188,25 +182,6 @@ Rectangle {
 
                     Components.UserBox {
                         id: user_entry
-
-                        /* I THINK THERE IS NO NEED FOR THAT HACK ANY MORE, BUT I LEAVE IT AS IT IS */
-
-                        /*** hack found in plasma breeze sddm as workaround to focus input field ***/
-                        /***************************************************************************** 
-                         * focus works in qmlscene
-                         * but this seems to be needed when loaded from SDDM
-                         * I don't understand why, but we have seen this before in the old lock screen
-                         ******************************************************************************/ 
-
-                        /* start hack */
-                        Timer {
-                            interval: 200
-                            running: true
-                            repeat: false
-                            onTriggered: user_entry.forceActiveFocus()
-                        }
-                        /* end hack */
-
                         width: 210
                         height: 25
 
@@ -231,16 +206,6 @@ Rectangle {
 
                     Components.PwBox {
                         id: pw_entry
-
-                        /* start hack */
-                        Timer {
-                            interval: 200
-                            running: true
-                            repeat: false
-                            onTriggered: pw_entry.forceActiveFocus()
-                        }
-                        /* end hack */
-
                         width: 210
                         height: 25
                         font.pixelSize: 14
