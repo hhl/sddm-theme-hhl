@@ -75,6 +75,13 @@ I told you, it is nearly the same, no fancy stuff and so on._
 - __humming__ it is based on poetry with some changes
   - i made it for to use with my LXQT installation and i wanna share it, have fun with it!
   - the hummingbird picture/ logo is taken from https://github.com/Caig/LXQt-graphics and carefully modified
+
+- __2001__ just another space theme
+  - now is is possible to show/ hide the password
+  - the icons now are *.svg, qt can handle it
+  - have fun with it
+  - and no, no last successfully logged-in $user will be displayed
+    - read above how to enable it
 ---
 
 #### What is needed:
@@ -128,6 +135,9 @@ In kf5/plasma you can use the sddm-kcm module ( kde-config-sddm) to choose via s
 
 #### icebear meets penguin
 ![alt icebear-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/icebear/images/preview.jpg "sddm-theme-icebear preview")
+
+#### 2001
+![alt 2001-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/2001/images/preview.jpg "sddm-theme-2001 preview")
 
 ---
 
