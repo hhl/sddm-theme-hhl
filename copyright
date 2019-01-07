@@ -2,7 +2,7 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: 
 
 Files: *
-Copyright: 2015-2018 Hendrik Lehmbruch <hendrikl@siduction.org>
+Copyright: 2015-2019 Hendrik Lehmbruch <hendrikl@siduction.org>
 License: EXPAT
 
 Files: theme/*
@@ -11,7 +11,7 @@ Copyright: 2015-2018 Hendrik Lehmbruch <hendrikl@siduction.org>
            2013      Abdurrahman AVCI <abdurrahmanavci@gmail.com>
 License: EXPAT
 
-Files: openspace/images/* mammoth/images/* poetry/images/* pure-poetry/images/* icebear/images/*
+Files: images/* 
 Copyright: 2015-2016 Hendrik Lehmbruch <hendrikl@siduction.org>
 License: WTFPL2
 
