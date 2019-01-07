@@ -14,9 +14,9 @@
    viewBox="0 0 16.933333 16.933333"
    version="1.1"
    id="svg8"
-   inkscape:version="0.91+devel r"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="system_reboot.svg"
-   inkscape:export-filename="/home/hhl/speicher/bastelecke/github/siduction-sddm/displaymanager/artwork/png/system_reboot.png"
+   inkscape:export-filename="/kammer/bastelecke/github/hhl-git/sddm-theme-hhl/source-images/system_reboot.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -28,16 +28,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="-38.634866"
-     inkscape:cy="71.612977"
+     inkscape:zoom="5.6"
+     inkscape:cx="31.70262"
+     inkscape:cy="28.844752"
      inkscape:document-units="mm"
      inkscape:current-layer="g9004"
      showgrid="false"
      inkscape:window-width="1440"
-     inkscape:window-height="841"
+     inkscape:window-height="844"
      inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      units="px" />
   <metadata
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -62,24 +62,20 @@
        transform="matrix(0.45932211,0.79556923,-0.79556923,0.45932211,227.09309,116.01529)">
       <g
          id="g9004">
-        <g
-           id="g4172"
-           transform="matrix(0.33986311,0,0,0.33986311,31.885961,209.86701)">
-          <path
-             sodipodi:nodetypes="ccccc"
-             inkscape:connector-curvature="0"
-             d="M 50.762116,248.66764 C 59.984115,256.98217 60.719753,271.19833 52.405216,280.42033 M 52.405215,280.42033 C 43.878413,289.87776 29.299325,290.63217 19.841901,282.10537 15.31838,278.02699 12.785889,272.56398 12.307676,266.93908"
-             style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.39999998;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             id="path4609-6" />
-          <path
-             sodipodi:nodetypes="ccccc"
-             inkscape:connector-curvature="0"
-             id="path4290-0"
-             d="M 10.890407,276.85836 12.103257,262.16321 17.230843,270.0186 20.163014,274.51063 Z"
-             inkscape:transform-center-y="5.5173798"
-             inkscape:transform-center-x="6.8410394"
-             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.09715819;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:100;stroke-dasharray:none;stroke-opacity:1" />
-        </g>
+        <path
+           id="path4609-6"
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.08856071;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 49.138132,294.37997 c 3.134217,2.8258 3.384233,7.65735 0.558429,10.79157 m -1e-6,0 c -2.897945,3.21423 -7.852839,3.47062 -11.067069,0.57268 -1.537378,-1.38609 -2.398078,-3.24277 -2.560605,-5.15446"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.37288359;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:100;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:transform-center-x="6.8410394"
+           inkscape:transform-center-y="5.5173798"
+           d="m 35.299293,304.15105 0.412203,-4.99434 1.742677,2.66976 0.996537,1.52668 z"
+           id="path4290-0"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
         <path
            inkscape:connector-curvature="0"
            id="path4161-0"

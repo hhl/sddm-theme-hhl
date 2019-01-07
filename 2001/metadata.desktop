@@ -1,0 +1,32 @@
+[SddmGreeterTheme]
+Name=2001
+Description=2001 sddm theme
+Type=sddm-theme
+Author=Hendrik Lehmbruch
+Copyright=2016, Hendrik Lehmbruch
+License=EXPAT
+Screenshot=images/preview.jpg
+Version=0.1
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=patience
+Theme-API=2.0
+Website=https://github.com/siduction/sddm-theme-deepspace
+
+
+# [SddmGreeterTheme]
+# Name=@CODENAME_SAFE@
+# Description=@DISPLAY_NAME@ sddm theme
+# Type=sddm-theme
+# Author=Hendrik Lehmbruch
+# Copyright=2016, Hendrik Lehmbruch
+# License=EXPAT
+# Screenshot=@PREVIEW@
+# Version=0.1
+# MainScript=Main.qml
+# ConfigFile=theme.conf
+# TranslationsDirectory=translations
+# Theme-Id=@CODENAME_SAFE@
+# Theme-API=2.0
+# Website=https://github.com/siduction/sddm-theme-deepspace
