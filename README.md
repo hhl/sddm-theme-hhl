@@ -56,6 +56,13 @@ __To use it, you do it on your own risk!__
  
 - all that fancy stuff is disabled!
 
+_If nothing helps, fetch 
+[sddm-theme-deepspace](https://github.com/siduction/sddm-theme-deepspace "the side on github")
+and modify it to your needs.  
+Or if you use [siduction](https://siduction.org "siduction homepage"), search for "sddm siduction" (`apt search sddm siduction`).  
+For debian sid/unstable you are able to find them in the [siduction repositories](http://packages.siduction.org/ "packages.siduction.org/"), [amd64](http://packages.siduction.org/?Repositories:extra_amd64 "amd64") and [i386](http://packages.siduction.org/?Repositories:extra_i386 "i386").  
+I told you, it is nearly the same, no fancy stuff and so on._
+
 - __poetry__ is like openspace but, ... 
   - another background
   - no suspend and hibernate button
@@ -64,20 +71,20 @@ __To use it, you do it on your own risk!__
   - date, time and hostname are displayed now top center
   - the fotmat for displaying the date and time is a bit different 
     - read the source, you will see and find a way to change it, if you want
-
-_If nothing helps, fetch 
-[sddm-theme-deepspace](https://github.com/siduction/sddm-theme-deepspace "the side on github")
-and modify it to your needs.  
-Or if you use [siduction](https://siduction.org "siduction homepage"), search for "sddm siduction" (`apt search sddm siduction`).  
-For debian sid/unstable you are able to find them in the [siduction repositories](http://packages.siduction.org/ "packages.siduction.org/"), [amd64](http://packages.siduction.org/?Repositories:extra_amd64 "amd64") and [i386](http://packages.siduction.org/?Repositories:extra_i386 "i386").  
-I told you, it is nearly the same, no fancy stuff and so on._
-
+    
 - __humming__ it is based on poetry with some changes
   - i made it for to use with my LXQT installation and i wanna share it, have fun with it!
   - the hummingbird picture/ logo is taken from https://github.com/Caig/LXQt-graphics and carefully modified
 
 - __2001__ just another space theme
-  - now is is possible to show/ hide the password
+  - now it is possible to show/ hide the password
+    - if you want to disable that feature, look into the Main.qml file
+   - as a workaround for 
+        - https://github.com/sddm/sddm/issues/1199
+        - and
+        - https://bugs.kde.org/show_bug.cgi?id=412252
+  - I added a timer for to reset the user_entry and the pw_entry
+  - and an onPressed and onReleased function for the show/hidePasswordPrompt_button (I know it doesn't fix the issues)
   - the icons now are *.svg, qt can handle it
   - have fun with it
   - and no, no last successfully logged-in $user will be displayed
