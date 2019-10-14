@@ -49,7 +49,7 @@ FocusScope {
     TextBox {
         id: txtMainPw
         width: parent.width; height: parent.height
-        color: "transparent" //""black"
+        color: "transparent"
 
         font.pixelSize: 14
         textColor: "white"

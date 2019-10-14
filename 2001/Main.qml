@@ -45,20 +45,47 @@ Rectangle {
         interval: 2500
         onTriggered: errorMessage.text = ""
     }
+    
+    /*******************************************************
+     * reset the user_entry and the pw_entry after 60 sec.
+     * It is a workaround for:
+     * https://github.com/sddm/sddm/issues/1199
+     * and
+     * https://bugs.kde.org/show_bug.cgi?id=412252 
+     *******************************************************/
+    Timer {
+        id: pw_entryResetTimer
+        interval: 60000
+        running: true
+        repeat: true
+        onTriggered: {
+            
+            /* clear user and password entry */
+            pw_entry.text = ""
+            user_entry.text = ""
+            user_entry.focus = true
+            
+            /* reset showPw_button */
+            pw_entry.echoMode = TextInput.Password
+            showPasswordPrompt_button.source = "images/hint.svg"
+            tooltip8.text = "show password" //textConstants.showPasswordPrompt
+        }
+    }
+    /* end pw_entryResetTimer */
 
     Connections {
-        target: sddm
+        target: sddm        
 
-        /* on fail login, clean user and password entry */
+        /* on fail login, clear user and password entry */
         onLoginFailed: {
             pw_entry.text = ""
             user_entry.text = ""
             user_entry.focus = true
             
-            /*reset showPw_button*/
+            /* reset showPw_button */
             pw_entry.echoMode = TextInput.Password
-            showPw_button.source = "images/visibility.svg"
-            tooltip8.text = "show password" //textConstants.showPassword
+            showPasswordPrompt_button.source = "images/hint.svg"
+            tooltip8.text = "show password" //textConstants.showPasswordPrompt
             
             /* and Reset the message*/
             errorMessageResetTimer.restart()
@@ -91,10 +118,10 @@ Rectangle {
         id: topBar
         anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
-        width: 490
+        width: 490 //@BOXWIDTH@
         height: 34
-        color: "#333335"
-        opacity: 0.35
+        color: "#333335" //"@BOXCOLOR@"
+        opacity: 0.35 //@BOXOPACITY@
         radius: 6
     }   
     /* end topBar */
@@ -104,8 +131,9 @@ Rectangle {
         id: footerPic
         anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottomMargin: 20
         width: parent.width
-        source: "images/footer.svg"
+        source: "images/footer.png"
         fillMode: Image.PreserveAspectFit
     }*/
     /* end footerPic */ 
@@ -114,18 +142,19 @@ Rectangle {
     Rectangle {
         anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
+        //anchors.verticalCenter: parent.verticalCenter//topMargin: //290 //@BOXTOPMARGIN@
         anchors.topMargin: 316
-        width: 490
-        height: 150
+        width: 490 //@BOXWIDTH@
+        height: 150 //@BOXHEIGHT@
         color: "transparent" /*must be transparent*/
-        radius: 12
+        radius: 12 //@BOXRADIUS@
         
         Rectangle {
-            width: 490
-            height: 150
-            color: "#333335"
-            opacity: 0.55 /* background opacity main block */
-            radius: 12
+            width: 490 //@BOXWIDTH@
+            height: 150 //@BOXHEIGHT@
+            color: "#333335" //"@BOXCOLOR@"
+            opacity: 0.55 //@BOXOPACITY@ /* background opacity main block */
+            radius: 12 //@BOXRADIUS@
         }
 
         /* Messages and warnings */             
@@ -207,7 +236,7 @@ Rectangle {
                          * for more informations why it isn't possible to configure it via
                          * /etc/sddm.conf see https://bugzilla.redhat.com/show_bug.cgi?id=1238889
                          * so i wait, till this is fixed in debian sid.
-                         * Dont forget to disable it in the /etc/sddm.conf
+                         * Dont forget to enable it in the /etc/sddm.conf
                          * "RememberLastUser=true".
                          ************************************************************************/
 
@@ -231,36 +260,45 @@ Rectangle {
                         KeyNavigation.backtab: user_entry; KeyNavigation.tab: login_button
 
                         Keys.onPressed: {
+                            pw_entry.echoMode = TextInput.Password
                             if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
                                 sddm.login(user_entry.text, pw_entry.text, menu_session.index)
                                 event.accepted = true
                             }
                             
-                        }                        
+                        }                       
                     }
                     
                 /************************************************* 
                  * show or hide password
-                 * if you dont want that feature, comment it out
+                 * if you don't want that feature, comment it out
                  *************************************************/   
                 ImageButton {
-                    id:  showPw_button
-                    source: "images/visibility.svg"
+                    id:  showPasswordPrompt_button
+                    source: "images/hint.svg"
                     height: 24
                     
-                    onClicked: if (pw_entry.echoMode === TextInput.Password) {
+                    onPressed: if (pw_entry.echoMode === TextInput.Password) {
                             pw_entry.echoMode = TextInput.Normal
-                            showPw_button.source = "images/hint.svg"
-                            tooltip8.text = "hide password" //textConstants.hidePassword
+                            showPasswordPrompt_button.source = "images/visibility.svg"
+                            tooltip8.text = "hide password" //textConstants.hidePasswordPrompt
                             pw_entry.focus = true; 
                         } else { 
                             pw_entry.echoMode = TextInput.Password
-                            showPw_button.source = "images/visibility.svg"
-                            tooltip8.text = "show password" //textConstants.showPassword
+                            showPasswordPrompt_button.source = "images/hint.svg"
+                            tooltip8.text = "show password" //textConstants.showPasswordPrompt
                             pw_entry.focus = true
                         }
+                        
+                        onReleased: { 
+                            pw_entry.echoMode = TextInput.Password
+                            showPasswordPrompt_button.source = "images/hint.svg"
+                            tooltip8.text = "show password" //textConstants.showPasswordPrompt
+                            pw_entry.focus = true
+                        }
+
                     }
-                    /* end showPw_button*/
+                    /* end showPw_button */             
                 }
                 /* end input fields */
 
@@ -357,8 +395,8 @@ Rectangle {
     
     Components.ToolTip {
         id: tooltip8
-        target: showPw_button
-        text: "show password" //textConstants.showPassword
+        target: showPasswordPrompt_button
+        text: "show password" //textConstants.showPasswordPrompt
     }
 
     /* tooltips buttonRow */
@@ -380,13 +418,13 @@ Rectangle {
         text: textConstants.reboot
     }
 
-     Components.ToolTip {
+    Components.ToolTip {
         id: tooltip6
         target: suspend_button
         text: textConstants.suspend
     }
         
-     Components.ToolTip {
+    Components.ToolTip {
         id: tooltip7
         target: hibernate_button 
         text: textConstants.hibernate
