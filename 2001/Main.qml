@@ -24,8 +24,8 @@
  *
  ***************************************************************************/
 
-import QtQuick 2.0
-import QtQuick.Controls 2.2
+import QtQuick 2.5
+import QtQuick.Controls 2.4
 import QtGraphicalEffects 1.0
 import SddmComponents 2.0
 import "./components" as Components
@@ -38,24 +38,18 @@ Rectangle {
     LayoutMirroring.childrenInherit: true
 
     TextConstants { id: textConstants }
-
-    /* Resets the "Login Failed" message after 2,5 seconds */
-    Timer {
-        id: errorMessageResetTimer
-        interval: 2500
-        onTriggered: errorMessage.text = ""
-    }
     
     /*******************************************************
-     * reset the user_entry and the pw_entry after 60 sec.
+     * reset the user_entry and the pw_entry after n sec.
      * It is a workaround for:
      * https://github.com/sddm/sddm/issues/1199
      * and
-     * https://bugs.kde.org/show_bug.cgi?id=412252 
+     * https://bugs.kde.org/show_bug.cgi?id=412252
      *******************************************************/
     Timer {
         id: pw_entryResetTimer
-        interval: 60000
+        /* 45 seconds */
+        interval: 45000 
         running: true
         repeat: true
         onTriggered: {
@@ -65,13 +59,21 @@ Rectangle {
             user_entry.text = ""
             user_entry.focus = true
             
-            /* reset showPw_button */
+            /* and reset showPasswordPrompt_button */
             pw_entry.echoMode = TextInput.Password
             showPasswordPrompt_button.source = "images/hint.svg"
             tooltip8.text = "show password" //textConstants.showPasswordPrompt
         }
     }
     /* end pw_entryResetTimer */
+
+    /* Resets the "Login Failed" message after n seconds */
+    Timer {
+        id: errorMessageResetTimer
+        /* 3 seconds */
+        interval: 3000
+        onTriggered: errorMessage.text = ""
+    }
 
     Connections {
         target: sddm        
@@ -82,7 +84,7 @@ Rectangle {
             user_entry.text = ""
             user_entry.focus = true
             
-            /* reset showPw_button */
+            /* reset showPasswordPrompt_button */
             pw_entry.echoMode = TextInput.Password
             showPasswordPrompt_button.source = "images/hint.svg"
             tooltip8.text = "show password" //textConstants.showPasswordPrompt
@@ -118,10 +120,10 @@ Rectangle {
         id: topBar
         anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
-        width: 490
+        width: 490 //@BOXWIDTH@
         height: 34
-        color: "#333335"
-        opacity: 0.35
+        color: "#333335" //"@BOXCOLOR@"
+        opacity: 0.35 //@BOXOPACITY@
         radius: 6
     }   
     /* end topBar */
@@ -142,18 +144,19 @@ Rectangle {
     Rectangle {
         anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
+        //anchors.verticalCenter: parent.verticalCenter//topMargin: //290 //@BOXTOPMARGIN@
         anchors.topMargin: 316
-        width: 490
-        height: 150
+        width: 490 //@BOXWIDTH@
+        height: 150 //@BOXHEIGHT@
         color: "transparent" /*must be transparent*/
-        radius: 12
+        radius: 12 //@BOXRADIUS@
         
         Rectangle {
-            width: 490
-            height: 150
-            color: "#333335"
-            opacity: 0.55 /* background opacity main block */
-            radius: 12
+            width: 490 //@BOXWIDTH@
+            height: 150 //@BOXHEIGHT@
+            color: "#333335" //"@BOXCOLOR@"
+            opacity: 0.55 //@BOXOPACITY@ /* background opacity main block */
+            radius: 12 //@BOXRADIUS@
         }
 
         /* Messages and warnings */             
@@ -254,7 +257,6 @@ Rectangle {
                         height: 25
                         font.pixelSize: 14
                         radius: 3
-                        focus: true
 
                         KeyNavigation.backtab: user_entry; KeyNavigation.tab: login_button
 
@@ -271,33 +273,46 @@ Rectangle {
                 /************************************************* 
                  * show or hide password
                  * if you don't want that feature, comment it out
+                 * or change onClicked to onPressed and remove the
+                 * comments at onReleased
                  *************************************************/   
                 ImageButton {
                     id:  showPasswordPrompt_button
                     source: "images/hint.svg"
                     height: 24
                     
-                    onPressed: if (pw_entry.echoMode === TextInput.Password) {
+                    /*****************************************************************
+                     * if you want only to show the password while pressing the button
+                     * change "onClicked" to "onPressed"
+                     * (see below "onReleased")
+                     *****************************************************************/
+                    onClicked: if (pw_entry.echoMode === TextInput.Password) {
                             pw_entry.echoMode = TextInput.Normal
                             showPasswordPrompt_button.source = "images/visibility.svg"
                             tooltip8.text = "hide password" //textConstants.hidePasswordPrompt
-                            pw_entry.focus = true; 
-                        } else { 
+                            focus : true
+                        } else {
                             pw_entry.echoMode = TextInput.Password
                             showPasswordPrompt_button.source = "images/hint.svg"
                             tooltip8.text = "show password" //textConstants.showPasswordPrompt
-                            pw_entry.focus = true
+                            focus : true
                         }
-                        
-                        onReleased: { 
-                            pw_entry.echoMode = TextInput.Password
-                            showPasswordPrompt_button.source = "images/hint.svg"
-                            tooltip8.text = "show password" //textConstants.showPasswordPrompt
-                            pw_entry.focus = true
-                        }
+                     
+                        /*******************************************
+                        * and remove the commets for on "onReleased"
+                        * if you changed "onClicked" to "onPressed"
+                        ********************************************/
+//                     onReleased: { 
+//                             pw_entry.echoMode = TextInput.Password
+//                             showPasswordPrompt_button.source = "images/hint.svg"
+//                             tooltip8.text = "show password" //textConstants.showPasswordPrompt
+//                             focus : true
+//                         }
+//                         
+                    KeyNavigation.backtab: pw_entry; KeyNavigation.tab: login_button
 
                     }
-                    /* end showPw_button */             
+                    /* end showPasswordPrompt_button */             
                 }
                 /* end input fields */
 
