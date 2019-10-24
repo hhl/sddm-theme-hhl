@@ -120,10 +120,10 @@ Rectangle {
         id: topBar
         anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
-        width: 490 //@BOXWIDTH@
+        width: 490
         height: 34
-        color: "#333335" //"@BOXCOLOR@"
-        opacity: 0.35 //@BOXOPACITY@
+        color: "#333335"
+        opacity: 0.35
         radius: 6
     }   
     /* end topBar */
@@ -144,19 +144,18 @@ Rectangle {
     Rectangle {
         anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
-        //anchors.verticalCenter: parent.verticalCenter//topMargin: //290 //@BOXTOPMARGIN@
         anchors.topMargin: 316
-        width: 490 //@BOXWIDTH@
-        height: 150 //@BOXHEIGHT@
+        width: 490
+        height: 150
         color: "transparent" /*must be transparent*/
-        radius: 12 //@BOXRADIUS@
+        radius: 12
         
         Rectangle {
-            width: 490 //@BOXWIDTH@
-            height: 150 //@BOXHEIGHT@
-            color: "#333335" //"@BOXCOLOR@"
-            opacity: 0.55 //@BOXOPACITY@ /* background opacity main block */
-            radius: 12 //@BOXRADIUS@
+            width: 490
+            height: 150
+            color: "#333335"
+            opacity: 0.55
+            radius: 12
         }
 
         /* Messages and warnings */             
