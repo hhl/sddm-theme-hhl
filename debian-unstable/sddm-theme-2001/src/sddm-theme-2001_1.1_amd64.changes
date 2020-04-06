@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Tue, 07 Apr 2020 01:24:24 +0200
+Source: sddm-theme-2001
+Binary: sddm-theme-2001
+Architecture: source all
+Version: 1.1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Hendrik Lehmbruch <hendrikl@siduction.org>
+Changed-By: Hendrik Lehmbruch <hendrikl@siduction.org>
+Description:
+ sddm-theme-2001 - theme for sddm
+Changes:
+ sddm-theme-2001 (1.1) UNRELEASED; urgency=medium
+ .
+   [ Hendrik Lehmbruch  ]
+   * Initial release.
+ .
+   [ Hendrik Lehmbruch ]
+   * fixed some typos and other things, i have to learn
+Checksums-Sha1:
+ e0f581c6f54e46458ea36bd4265bc160d7197d4a 762 sddm-theme-2001_1.1.dsc
+ 185c95aaa99c51bdf010c263dd71f42063d56210 7053952 sddm-theme-2001_1.1.tar.xz
+ ebe8181b340df6f046959da2bd1ce631530bbcbe 7055516 sddm-theme-2001_1.1_all.deb
+ f18e8e57c862f9778026b22c6400c9056b7db59e 5171 sddm-theme-2001_1.1_amd64.buildinfo
+Checksums-Sha256:
+ 3ab608b0319c5f9e245a09b97d89e93d413c4801c98e48286f7141427424b761 762 sddm-theme-2001_1.1.dsc
+ c519a990c9086b1abce30b9ab75923a34b2920de7e486cd74e18a36aa1650a80 7053952 sddm-theme-2001_1.1.tar.xz
+ fd5152fbba824d410813d9e3386ab9d6e600fbf1a593ad98f91e234684fddac0 7055516 sddm-theme-2001_1.1_all.deb
+ 96f9f4a04248c44464ea7bd95e635940d022c9336df709472e776b5ff7442eee 5171 sddm-theme-2001_1.1_amd64.buildinfo
+Files:
+ fa8e0fdc5432e90f1fb2d867864c062c 762 x11 optional sddm-theme-2001_1.1.dsc
+ d97611ddc6c33697e17dd0459eae44b4 7053952 x11 optional sddm-theme-2001_1.1.tar.xz
+ 5ad7b7b9da4f611f780e3ec802bb657d 7055516 x11 optional sddm-theme-2001_1.1_all.deb
+ d4a85029693abaa606af8e314160541d 5171 x11 optional sddm-theme-2001_1.1_amd64.buildinfo

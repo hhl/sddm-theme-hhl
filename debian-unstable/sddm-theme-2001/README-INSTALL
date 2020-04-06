@@ -1,7 +1,7 @@
 Use apt to install the package
 # Download it, cd to it,
 
-# apt install --install-recommends ./<pkg.deb>
+# apt install ./<pkg.deb>
 
 it depends on:
 qml-module-qtgraphicaleffects,
