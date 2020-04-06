@@ -130,7 +130,7 @@ In kf5/plasma you can use the sddm-kcm module ( kde-config-sddm) to choose via s
 
  For debian/unstable aka sid I have made for the sddm-theme-2001 a debian package!
  
- You can download it from [here](https://github.com/hhl/sddm-theme-hhl/raw/master/debian-unstable/sddm-theme-2001/sddm-theme-2001_1.0_all.deb "download 2001")
+ You can download it from [here](https://github.com/hhl/sddm-theme-hhl/raw/master/debian-unstable/sddm-theme-2001/sddm-theme-2001_1.1_all.deb "download 2001")
  
  The other themes will follow, but it needs its time!
  
