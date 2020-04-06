@@ -127,6 +127,12 @@ user@home:~$ sddm-greeter --test-mode --theme ~/download/path/to/the/sddm/greete
  Current=<your choise>  
 ```
 In kf5/plasma you can use the sddm-kcm module ( kde-config-sddm) to choose via systemsettings the sddm-theme of your wishes.
+
+ For debian/unstable aka sid I have made for the sddm-theme-2001 a debian package!
+ 
+ You can download it from [here](https://github.com/hhl/sddm-theme-hhl/tree/master/debian-unstable/sddm-theme-2001 "dowload 2001")
+ 
+ The other themes will follow, but it needs its time!
  
 ---
  
