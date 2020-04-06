@@ -83,12 +83,16 @@ I told you, it is nearly the same, no fancy stuff and so on._
         - https://github.com/sddm/sddm/issues/1199
         - and
         - https://bugs.kde.org/show_bug.cgi?id=412252
-  - I added a timer for to reset the user_entry and the pw_entry
-  - and an onPressed and onReleased function for the show/hidePasswordPrompt_button (I know it doesn't fix the issues)
-  - the icons now are *.svg, qt can handle it
-  - have fun with it
-  - and no, no last successfully logged-in $user will be displayed
-    - read above how to enable it
+        
+        _(I know it doesn't fix the issues)_
+        - I added a timer for to reset the user_entry and the pw_entry
+        - ~~and an onPressed and onReleased function for the show/hidePasswordPrompt_button~~
+        - (if you want that pressed and released feature, read the Main.qml file)
+        
+    - the icons now are *.svg, qt can handle it
+    - have fun with it
+    - and no, no last successfully logged-in $user will be displayed
+      - read above how to enable it
 ---
 
 #### What is needed:
@@ -120,7 +124,7 @@ user@home:~$ sddm-greeter --test-mode --theme ~/download/path/to/the/sddm/greete
  ```
  [Theme]
  # Current theme name
- Current=<your choise>
+ Current=<your choise>  
 ```
 In kf5/plasma you can use the sddm-kcm module ( kde-config-sddm) to choose via systemsettings the sddm-theme of your wishes.
  
