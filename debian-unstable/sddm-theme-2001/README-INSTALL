@@ -1,0 +1,9 @@
+Use apt to install the package
+# Download it, cd to it,
+
+# apt install --install-recommends ./<pkg.deb>
+
+it depends on:
+qml-module-qtgraphicaleffects,
+qml-module-qtquick-controls
+sddm
