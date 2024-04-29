@@ -15,20 +15,20 @@ Changes:
  .
    * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 Checksums-Sha1:
- 9db77eb6a68a3187648a59f85cbd02f8179b450e 1088 sddm-theme-black-qt6_1.0-1.dsc
+ 8be56a3e5b585064e5c53651694dfb0e96499e0c 1088 sddm-theme-black-qt6_1.0-1.dsc
  746c1b506fc3480c2353938c3d0e61fa159c0a02 47282 sddm-theme-black-qt6_1.0.orig.tar.gz
- 75ee607f157e878b230f70089d5e1b87d79622b4 2780 sddm-theme-black-qt6_1.0-1.debian.tar.xz
- 3126b394edd78eeeca846987cdd679dfb7e9222d 36764 sddm-theme-black-qt6_1.0-1_all.deb
- 27fb39c41ad8a68cf77936e92a8d69464cca3817 5726 sddm-theme-black-qt6_1.0-1_amd64.buildinfo
+ 10b4c3ab2180094cb0a787fb5c7c7bd442ce267b 2776 sddm-theme-black-qt6_1.0-1.debian.tar.xz
+ 2b699bd02b1923ce5c90fae92e4058e033bc27ee 36760 sddm-theme-black-qt6_1.0-1_all.deb
+ a594a4f9a8d91719e3c89a3ae8a37fdf1c825fa3 5726 sddm-theme-black-qt6_1.0-1_amd64.buildinfo
 Checksums-Sha256:
- 43d7e5fecec74d023babe1e50ad47f0cf273855f559114e7a822a16b7e7cca02 1088 sddm-theme-black-qt6_1.0-1.dsc
+ 448d9ec37ab3fcf0243b574bfcbc5346cd5c8e9842dfb862bbd358a183c11be5 1088 sddm-theme-black-qt6_1.0-1.dsc
  a3edefa2044c745040150f1721ec784afc037e7c879df0e77e8036f58aee3ecd 47282 sddm-theme-black-qt6_1.0.orig.tar.gz
- a21353cdf1e887f72f275f5000a320dd633f4fc27baf08826d1b954a43077ee6 2780 sddm-theme-black-qt6_1.0-1.debian.tar.xz
- 30bb280e62547cf04102db0497486d5205062db886ec8dae0419356ebcd430dc 36764 sddm-theme-black-qt6_1.0-1_all.deb
- fe19c74592dab7f6b2b7a1436955dc76f78c73c3c509d3eee10f483803d22779 5726 sddm-theme-black-qt6_1.0-1_amd64.buildinfo
+ bf34b142bd4f32d2a4c5fce05df9408d699eae89a31773e1845c6444ce301574 2776 sddm-theme-black-qt6_1.0-1.debian.tar.xz
+ f59531836f90b4b134142608436b9845099d7f9d19822e3591d77e403fd900b3 36760 sddm-theme-black-qt6_1.0-1_all.deb
+ 55fb5d0f669b1b900606df89e3c8f33d314d5a18f68c3ef087fb71816065528d 5726 sddm-theme-black-qt6_1.0-1_amd64.buildinfo
 Files:
- 6596056b26a98bee35645bf2e821f12c 1088 x11 optional sddm-theme-black-qt6_1.0-1.dsc
+ 0984cae802f0f76151f6d38ed42d53dc 1088 x11 optional sddm-theme-black-qt6_1.0-1.dsc
  2d552a358459602508d2f9219b0e3acf 47282 x11 optional sddm-theme-black-qt6_1.0.orig.tar.gz
- 350250a61a65eb7f379bf239857f54ae 2780 x11 optional sddm-theme-black-qt6_1.0-1.debian.tar.xz
- 574864001c6f359736b195badbf3fcd1 36764 x11 optional sddm-theme-black-qt6_1.0-1_all.deb
- 8379d998cacde62efaaf5b9da21e7bb7 5726 x11 optional sddm-theme-black-qt6_1.0-1_amd64.buildinfo
+ 8fa968c4c6b3898b81b507ff582d9f8c 2776 x11 optional sddm-theme-black-qt6_1.0-1.debian.tar.xz
+ e7f2dd4780efcf9eb4ecdd0cb57e994e 36760 x11 optional sddm-theme-black-qt6_1.0-1_all.deb
+ 55b4db0a738e6d2203681d87718d1ec2 5726 x11 optional sddm-theme-black-qt6_1.0-1_amd64.buildinfo
