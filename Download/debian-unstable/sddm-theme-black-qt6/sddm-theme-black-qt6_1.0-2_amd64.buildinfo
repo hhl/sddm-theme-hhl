@@ -2,19 +2,19 @@ Format: 1.0
 Source: sddm-theme-black-qt6
 Binary: sddm-theme-black-qt6
 Architecture: all source
-Version: 1.0-1
+Version: 1.0-2
 Checksums-Md5:
- 0984cae802f0f76151f6d38ed42d53dc 1088 sddm-theme-black-qt6_1.0-1.dsc
- e7f2dd4780efcf9eb4ecdd0cb57e994e 36760 sddm-theme-black-qt6_1.0-1_all.deb
+ d6c45ce2f9dc3ebbb7850d861cd46509 1091 sddm-theme-black-qt6_1.0-2.dsc
+ a15dde1d51f515880fa7fa4e6c39f84d 35800 sddm-theme-black-qt6_1.0-2_all.deb
 Checksums-Sha1:
- 8be56a3e5b585064e5c53651694dfb0e96499e0c 1088 sddm-theme-black-qt6_1.0-1.dsc
- 2b699bd02b1923ce5c90fae92e4058e033bc27ee 36760 sddm-theme-black-qt6_1.0-1_all.deb
+ f8f58068a7f7b6b2d845ff6d035ab06186d50a07 1091 sddm-theme-black-qt6_1.0-2.dsc
+ a630a3fb6933729ad1d2b40a6ded9f2d222d3b6b 35800 sddm-theme-black-qt6_1.0-2_all.deb
 Checksums-Sha256:
- 448d9ec37ab3fcf0243b574bfcbc5346cd5c8e9842dfb862bbd358a183c11be5 1088 sddm-theme-black-qt6_1.0-1.dsc
- f59531836f90b4b134142608436b9845099d7f9d19822e3591d77e403fd900b3 36760 sddm-theme-black-qt6_1.0-1_all.deb
+ 9b29d88f02539456bb4dda07cff1e4172ee1c7dfe3e2b199ffad3e37ecf84dbd 1091 sddm-theme-black-qt6_1.0-2.dsc
+ ba84c05af95183b0dc2e7c267dc6b178f06e4de9021f1bf4a10e8b84432beef3 35800 sddm-theme-black-qt6_1.0-2_all.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Mon, 29 Apr 2024 22:21:17 +0200
+Build-Date: Mon, 29 Apr 2024 23:03:53 +0200
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -195,4 +195,4 @@ Environment:
  LC_PAPER="de_DE.UTF-8"
  LC_TELEPHONE="de_DE.UTF-8"
  LC_TIME="de_DE.UTF-8"
- SOURCE_DATE_EPOCH="1714409380"
+ SOURCE_DATE_EPOCH="1714424251"
