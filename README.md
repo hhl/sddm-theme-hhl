@@ -2,6 +2,12 @@ Hi, here you will find my thoughts about [sddm](https://github.com/sddm/sddm "sd
 
 _This is my playground, be aware of this!_
 
+They will only work under qt5 at this time!
+
+I have uploaded one black-theme (when I write black, I mean black) which is ready for qt6.
+
+You will find it under downloads!
+
 That are examples for my personal use and test.  
 I share them, but you have to keep in mind, that software could eat your pet!
 
@@ -158,9 +164,6 @@ In kf5/plasma you can use the sddm-kcm module ( kde-config-sddm) to choose via s
 #### 2001
 ![alt 2001-preview](https://github.com/hhl/sddm-theme-hhl/blob/master/2001/images/preview.jpg "sddm-theme-2001 preview")
 
- You can [download](https://github.com/hhl/sddm-theme-hhl/tree/master/Download "Download directory") it from [here](https://github.com/hhl/sddm-theme-hhl/raw/master/Download/debian-unstable/sddm-theme-2001/sddm-theme-2001_1.1_all.deb "download 2001")
- 
- The [Checksum ](https://github.com/hhl/sddm-theme-hhl/raw/master/Download/debian-unstable/sddm-theme-2001/Checksum "Checksum File for sddm-theme-2001_1.1_all.deb") for sddm-theme-2001_1.1_all.deb
 
 ---
 
