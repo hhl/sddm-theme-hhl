@@ -2,6 +2,12 @@ Hi, here you will find my thoughts about [sddm](https://github.com/sddm/sddm "sd
 
 _This is my playground, be aware of this!_
 
+They will only work under qt5 at this time!
+
+I have uploaded one black-theme (when I write black, I mean black) which is ready for qt6.
+
+You will find it under downloads!
+
 That are examples for my personal use and test.  
 I share them, but you have to keep in mind, that software could eat your pet!
 
