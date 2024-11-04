@@ -1,0 +1,7 @@
+module components
+
+CapsLog      	CapsLog.qml
+PwBox          	PwBox.qml
+SessionMenu	    SessionMenu.qml
+ToolTip        	ToolTip.qml
+UserBox    	    UserBox.qml

@@ -1,0 +1,3 @@
+theme/*       usr/share/sddm/themes/2001/
+theme/images/preview.jpg   usr/share/sddm/themes/2001/images/
+etc/sddm.conf usr/share/sddm/2001/

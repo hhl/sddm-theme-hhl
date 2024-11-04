@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Mon, 04 Nov 2024 13:19:29 +0100
+Source: sddm-theme-black-qt6
+Binary: sddm-theme-black-qt6
+Architecture: source all
+Version: 1.0-5
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Hendrik Lehmbruch <hendrikl@siduction.org>
+Changed-By: Hendrik Lehmbruch <hendrikL@siduction.org>
+Description:
+ sddm-theme-black-qt6 - theme for sddm
+Changes:
+ sddm-theme-black-qt6 (1.0-5) UNRELEASED; urgency=medium
+ .
+   * make it work with qt6
+Checksums-Sha1:
+ c6e9e3f38d777a14b407eba2e21a743111b13082 791 sddm-theme-black-qt6_1.0-5.dsc
+ 11e52e914d127e666804dc30e51e4f3a4ea81d54 54379 sddm-theme-black-qt6_1.0-5.tar.gz
+ df5f0f569f38836ee59c95b363b676dac9a6a65d 32588 sddm-theme-black-qt6_1.0-5_all.deb
+ 5ea4342e50bc41bdc321049a9bb7f4123145e9ce 5502 sddm-theme-black-qt6_1.0-5_amd64.buildinfo
+Checksums-Sha256:
+ 9ae41dec4f6ad6c2fd839cb66b8300375b31131461ff7b2b6b9784d89dfa66d2 791 sddm-theme-black-qt6_1.0-5.dsc
+ 31dd556e44a26093d38aa9d6bfa8d0d13e211024f79871ced6fb31be26ad7bfd 54379 sddm-theme-black-qt6_1.0-5.tar.gz
+ 6cc0e33d57e7bae7a25f70c83df881e2eddb8962e1577d8c691584d7c9137333 32588 sddm-theme-black-qt6_1.0-5_all.deb
+ 18ebe0390e8d834a1e4a92c0c100f17b82682221976eb379bf14624506be169c 5502 sddm-theme-black-qt6_1.0-5_amd64.buildinfo
+Files:
+ b44de79df1e3fce44195e668bb032c24 791 x11 optional sddm-theme-black-qt6_1.0-5.dsc
+ cca5a121425e5ff9cc44116e673b7631 54379 x11 optional sddm-theme-black-qt6_1.0-5.tar.gz
+ d93b2b6fdae245d1957660803396d6cf 32588 x11 optional sddm-theme-black-qt6_1.0-5_all.deb
+ ab32e113cf307510900b00264c9e24e1 5502 x11 optional sddm-theme-black-qt6_1.0-5_amd64.buildinfo

@@ -1,0 +1,22 @@
+Source: sddm-theme-2001
+Maintainer: Hendrik Lehmbruch <hendrikl@siduction.org>
+Uploaders: Hendrik Lehmbruch <hendrikl@siduction.org>
+Section: x11
+Priority: optional
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.1.4
+Vcs-Browser: https://github.com/hhl/sddm-theme-hhl
+Vcs-Git: https://github.com/hhl/sddm-theme-hhl.git
+Homepage: https://github.com/hhl/sddm-theme-hhl
+
+Package: sddm-theme-2001
+Architecture: all
+Depends: ${misc:Depends},
+         qml-module-qtgraphicaleffects,
+         qml-module-qtquick-controls,
+         sddm
+Provides: sddm-theme
+Description:  theme for sddm
+ 2001 sddm theme.
+ .
+ This package contain a sddm theme.
