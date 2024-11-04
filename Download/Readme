@@ -1,1 +1,3 @@
 This packages are build for debian/unstable 
+
+The tar-file can be used in every distribution which is using qt6 and sddm as login-manager!
