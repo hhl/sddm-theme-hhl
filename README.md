@@ -17,6 +17,10 @@ __To use it, you do it on your own risk!__
 
 #### Now some Words to the themes:
 
+
+Reminder: The themes only working with qt5, I will port them to qt6, but it need time!
+
+
 - __openspace__ is originally made for [siduction](https://siduction.org "siduction homepage") with the name __deepspace__.  
   I renamed it to "openspace" to avoid name confusions.
   - openspace has the same background like sddm-theme-patience for siduction without the branding!
